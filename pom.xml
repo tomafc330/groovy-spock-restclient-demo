@@ -4,7 +4,7 @@
 	<groupId>com.demo</groupId>	
 	<version>0.0.1-SNAPSHOT</version>
 	<artifactId>groovy-spock-restclient-demo</artifactId>
-	<name>Appshot Integration Tests</name>
+	<name>Groovy-Spock-RESTClient test framework demo</name>
 	<repositories>
 		<repository>
 			<id>Codehaus</id>
