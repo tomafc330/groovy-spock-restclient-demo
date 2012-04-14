@@ -36,8 +36,8 @@ class BreweryAPIServiceTest extends Specification {
             assert resp.data.data.name.contains('British Origin Ales')
 	}
     
-//    @Timeout(value = 1)
-    def "Test getting beers with high abv content of 8%"() {
+    //@Timeout(value = 1)
+    def "Test getting beers with abv content of 8%"() {
         when: "we call to get 8% beers"
             def client = new RESTClient("http://api.brewerydb.com")
             def params = ['key' : "${api_key}", abv : 8]
@@ -45,10 +45,12 @@ class BreweryAPIServiceTest extends Specification {
             def resp = logTime {
                 return client.get(path: '/v2/beers', query : params)
             }
+            println(resp.data)
         then: "we should get all beers equal or greater to 8%"
             resp.data.data*.abv.each { 
                 assert it == '8'
             }
+            assert resp.data.data*.name.contains('888 IPA')
             assert resp.data.status == 'success'
     }
     
