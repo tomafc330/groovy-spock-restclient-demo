@@ -1,8 +1,17 @@
 About this demo:
-
-This is a demo of a test framework that uses Groovy, Spock, and the RESTClient libararies to test service endpoints for thebreweryapi.
+This is a demo of a test framework that uses Groovy, Spock, and the RESTClient libararies to test service endpoints for The Brewery DB api.
 
 Set-up instructions:
-
 This demo uses Maven as the build tool and Eclipse as the IDE. The Eclipse IDE also use the Groovy-eclipse plugin and the m2eclipse plugin.
 
+Download links:
+Maven - http://maven.apache.org/download.html
+Eclipse IDE - http://eclipse.org
+Groovy-eclipse plugin for Eclipse - http://groovy.codehaus.org/Eclipse+Plugin
+m2Eclipse plugin for Eclipse - http://www.eclipse.org/m2e/
+
+To run the demo tests:
+Install Maven, and then navigate to the project root and type the command "mvn clean test". This will run the tests in the project.
+
+To import it into the Eclipse IDE:
+Open Eclipse, and then goto File -> Import, and choose Existing Projects into Workspace and navigate to this directory.
