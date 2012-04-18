@@ -1,0 +1,8 @@
+About this demo:
+
+This is a demo of a test framework that uses Groovy, Spock, and the RESTClient libararies to test service endpoints for thebreweryapi.
+
+Set-up instructions:
+
+This demo uses Maven as the build tool and Eclipse as the IDE. The Eclipse IDE also use the Groovy-eclipse plugin and the m2eclipse plugin.
+
